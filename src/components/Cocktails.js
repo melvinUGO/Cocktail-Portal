@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import Loading from "./Loading";
 
@@ -9,13 +10,13 @@ const Cocktails = () => {
     return <Loading />;
   }
   return (
-    <section className="p-5 md:grid grid-cols-4">
+    <section className="p-5 md:grid grid-cols-3 gap-10 max-w-7xl">
       {cocktails.map((item) => {
         const { id, type, image, name, glass } = item;
         return (
           <article
             key={id}
-            className="w-80 my-10 bg-main shadow-2xl font-extralight "
+            className="w-70 pb-3 my-10 bg-main shadow-2xl font-extralight "
           >
             <div className="img-container ">
               <img src={image} alt={name} />
@@ -27,9 +28,15 @@ const Cocktails = () => {
               <p className="p-1  w-fit rounded-lg font-bold mb-1">
                 Type : {type}
               </p>
-              <p className="p-1  w-fit rounded-lg font-bold mb-1">
+              <p className="p-1  w-fit rounded-lg font-bold mb-3">
                 Glass : {glass}
               </p>
+              <Link
+                to={`/singleCocktail/${id}`}
+                className="bg-button text-buttonText rounded-xl p-1"
+              >
+                show more?
+              </Link>
             </div>
           </article>
         );

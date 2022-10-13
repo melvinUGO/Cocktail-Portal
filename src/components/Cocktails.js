@@ -18,7 +18,7 @@ const Cocktails = () => {
     );
   }
   return (
-    <section className="p-5 md:grid grid-cols-3 gap-10 max-w-screen-2xl">
+    <section className="p-5 md:grid md:px-20 md:mt-40 grid-cols-3 gap-10 max-w-screen-2xl">
       {cocktails.map((item) => {
         const { id, type, image, name, glass } = item;
         return (

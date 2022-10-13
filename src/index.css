@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: rock-salt;
-  src: url("./assets/RockSalt-Regular.ttf");
+  font-family: kalam;
+  src: url("./assets/Kalam-Regular.ttf");
 }
 
 body {
@@ -74,5 +74,5 @@ body {
 
 /* coctails info */
 .info {
-  font-family: rock-salt;
+  font-family: kalam;
 }

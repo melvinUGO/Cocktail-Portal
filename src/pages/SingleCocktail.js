@@ -109,7 +109,7 @@ const SingleCocktail = () => {
                   key={index}
                 >
                   {" "}
-                  {item}
+                  {item},
                 </span>
               ) : null;
             })}

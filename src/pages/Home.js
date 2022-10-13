@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="text-center max-w-7xl  p-3">
+      <section className="text-center max-w-screen-2xl  p-3">
         <h4 className="text-2xl text-headline font-bold p-5">
           Search for Cocktail
         </h4>

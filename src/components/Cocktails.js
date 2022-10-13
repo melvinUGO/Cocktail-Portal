@@ -9,8 +9,16 @@ const Cocktails = () => {
   if (loading) {
     return <Loading />;
   }
+
+  if (cocktails.length < 1) {
+    return (
+      <h3 className="mt-10 p-5 text-paragraph text-2xl text-center max-w-screen-2xl">
+        <em>No Cocktails matched your search</em>
+      </h3>
+    );
+  }
   return (
-    <section className="p-5 md:grid grid-cols-3 gap-10 max-w-7xl">
+    <section className="p-5 md:grid grid-cols-3 gap-10 max-w-screen-2xl">
       {cocktails.map((item) => {
         const { id, type, image, name, glass } = item;
         return (

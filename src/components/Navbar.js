@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     // navbar
-    <nav className="relative p-5 px-10 sm:px-3 md:px-20 lg:px-30 max-w-7xl flex justify-between align-center shadow-md ">
+    <nav className="relative p-5 px-10 sm:px-3 md:px-20 lg:px-30 max-w-screen-2xl flex justify-between align-center shadow-md ">
       <h3 className="text-2xl sm:text-sm md:text-2xl lg:text-3xl font-bold ">
         Cocktail
         <span className=" text-highlight border-b-1 shadow-xl "> Portal</span>
